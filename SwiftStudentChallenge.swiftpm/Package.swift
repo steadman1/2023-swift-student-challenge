@@ -17,10 +17,10 @@ let package = Package(
             name: "Challenge",
             targets: ["AppModule"],
             bundleIdentifier: "com.steadman.SwiftStudentChallenge",
-            teamIdentifier: "95SLPS7Q77",
+            teamIdentifier: "925J898556",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .asset("AppIcon"),
+            appIcon: .placeholder(icon: .cloud),
             accentColor: .presetColor(.orange),
             supportedDeviceFamilies: [
                 .pad,

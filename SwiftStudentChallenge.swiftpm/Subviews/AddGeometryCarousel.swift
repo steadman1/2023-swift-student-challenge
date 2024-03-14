@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+struct GeometryListItem {
+    let icon: Image
+    let name: String
+    let addGeometry: () -> Void
+}
+
 
 struct AddGeometryCarousel: View {
     @ObservedObject var arView = SharedARView.shared

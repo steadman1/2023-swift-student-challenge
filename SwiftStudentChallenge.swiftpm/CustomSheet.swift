@@ -13,7 +13,7 @@ struct CustomSheet<Content: View, LabelContent: View>: View {
     @State var animation: Double = 0
     @State var dragHeight: Double = 0
     @State var dragHeightStart: Double = 0
-    let size = 250.0
+    let size = 400.0
     let content: Content
     let label: LabelContent
     
@@ -35,8 +35,6 @@ struct CustomSheet<Content: View, LabelContent: View>: View {
         var position = screen.height + screen.halfHeight + screen.safeAreaInsets.bottom - (size * animation)
         if dragHeight > 0 {
             position = screen.halfHeight + dragHeight - 57
-        } else if NavigationBar.shared.isShowing {
-            position -= NavigationBar.height
         }
         
         return ZStack {
